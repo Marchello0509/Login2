@@ -160,3 +160,177 @@ $roboto: 'Roboto', sans-serif;
         }
     }
 }
+.mobilemain {
+    &_block2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .main {
+        display: none;
+    }
+    .mobilemain {
+        &_block1 {
+            width: 100%;
+            height: 300px;
+            background: url(./img/image\ 1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &_block2 {
+            @include ForBlocks(center);
+            width: 100%;
+            height: 600px;
+            &_bl1 {
+                margin-top: 30px;
+                width: 350px;
+                height: 532px;
+                &_bl {
+                    @include ForBlocks(center);
+                    &_texts {
+                        width: 292px;
+                        height: 56px;
+                        &_p1 {
+                            color: var(--800, #2D3748);
+                            text-align: center;
+                            font-size: 16px;
+                            font-family: $roboto;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                        &_p2 {
+                            color: var(--900, #1A202C);
+                            font-size: 30px;
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                        }
+                    }
+                }
+                &_inputs {
+                    width: 350px;
+                    height: 215px;
+                    margin-top: 24px;
+                    &_p1 {
+                        color: var(--700, #4A5568);
+                        font-size: 16px;
+                        font-family: $roboto; 
+                    }
+                    &_input1 {
+                        border-radius: 5px;
+                        border: 2px solid #E8E8E8;
+                        margin-top: 11px;
+                        color: var(--800, #2D3748);
+                        font-size: 14px;
+                        font-family: $roboto;
+                        padding: 17px 163px 17px 20px;
+                    }
+                    &_p2 {
+                        color: var(--700, #4A5568);
+                        font-size: 16px;
+                        margin-top: 11px;
+                        font-family: $roboto; 
+                    }
+                    &_block {
+                        display: flex;
+                        margin-top: 15px;
+                        &_checkbox {
+                            cursor: pointer;
+                        }
+                        &_p1 {
+                            color: var(--800, #2D3748);
+                            font-size: 14px;
+                            margin-top: 2px;
+                            font-family: $roboto; 
+                        }
+                        &_a {
+                            margin-left: 125px;
+                            margin-top: 2px;
+                            text-decoration: none;
+                            color: var(--800, #2C5282);
+                            font-size: 14px;
+                            font-family: $roboto;
+                            border-bottom: 2px solid #2c538200;
+                            transition-duration: 0.6s;
+                            &:hover {
+                                border-bottom: 2px solid #2c5382;
+                                transition-duration: 0.6s;
+                            }
+                        }
+                    }
+                }
+                &_btns {
+                    width: 350px;
+                    height: 116px;
+                    margin-top: 27px;
+                    &_btn1 {
+                        width: 350px;
+                        height: 50px;
+                        background: #04C35C;
+                        border-radius: 5px;
+                        color: #FFF;
+                        font-size: 16px;
+                        font-family: $roboto;
+                        font-weight: 700;
+                        border: none;
+                        cursor: pointer;
+                    }
+                    &_btn2 {
+                        @include ForBlocks(center);
+                        margin-top: 15px;
+                        column-gap: 11px;
+                        width: 350px;
+                        height: 50px;
+                        background: var(--800, #2D3748);
+                        border-radius: 5px;
+                        border: none;
+                        cursor: pointer;
+                        &_img {
+                            margin-top: 15px;
+                        }
+                        &_p {
+                            color: #FFF;
+                            margin-top: 15px;
+                            font-size: 16px;
+                            font-family: $roboto;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                &_dh {
+                    display: flex;
+                    width: 350px;
+                    height: 19px;
+                    margin-top: 55px;
+                    &_p {
+                        color: #616161;
+                        font-size: 16px;
+                        font-family: $roboto;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                    &_a {
+                        text-decoration: none;
+                        color: rgb(12, 75, 126);
+                        margin-left: 80px;
+                        font-size: 16px;
+                        font-family: $roboto;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        border-bottom: 2px solid rgba(12, 75, 126, 0);
+                        transition-duration: 0.6s;
+                        &:hover {
+                            border-bottom: 2px solid rgb(12, 75, 126);
+                            transition-duration: 0.6s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
